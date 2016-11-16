@@ -4,7 +4,7 @@ Simple front end cross-browser JS library for sending AJAX requests asynchronous
 ## Simple Usage
 ```javascript
 ajax(function(err, data) {
-  if (!errr) {
+  if (!err) {
     alert(data);
   }
   else {
