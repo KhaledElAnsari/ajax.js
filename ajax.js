@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 var ajax = function(cb, url, method, data) {
 	try {
-		var request = new(XMLHttpRequest || ActiveXObject)();
+		var request = new(XMLHttpRequest || ActiveXObject)("Microsoft.XMLHTTP");
 		if (method) {
 			request.open(method, url, true);
 		}
