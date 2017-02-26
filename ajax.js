@@ -16,7 +16,7 @@ var ajax = function(definedOptions, cb) {
 		if (!definedOptions.hasOwnProperty("url")) throw "Missing required option: url";
 
 		var options = {
-			"method": (definedOptions.method || "GET"),
+			"method": (JSON.stringify(definedOptions.method) || "GET"),
 			"url": definedOptions.url,
 			"data": (definedOptions.data || null),
 			"headers": (definedOptions.headers || {})
